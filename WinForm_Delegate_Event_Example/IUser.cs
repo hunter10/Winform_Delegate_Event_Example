@@ -11,13 +11,13 @@ namespace WinForm_Delegate_Event_Example
     public delegate void ChangeAttrHandler<IUser>(string attr);
     public interface IUser
     {
-        event ChangeAttrHandler<IUser> ChangeAttr;
+        event ChangeAttrHandler<IUser> IUser_ChangeAttr;
     }
 
     public delegate void ChangeColorHandler<IUser2>(IUser2 sender, CustomColor e);
     public interface IUser2
     {
-        event ChangeColorHandler<IUser2> ChangeColor;
+        event ChangeColorHandler<IUser2> IUser2_ChangeColor;
     }
 
     public class CustomColor : EventArgs

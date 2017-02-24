@@ -46,7 +46,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ActionView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ActionView.Designer.cs">
+      <DependentUpon>ActionView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IController.cs" />
+    <Compile Include="IModel.cs" />
     <Compile Include="IUser.cs" />
+    <Compile Include="IView.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -67,6 +76,9 @@
     <Compile Include="TimeLineView.Designer.cs">
       <DependentUpon>TimeLineView.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ActionView.resx">
+      <DependentUpon>ActionView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
